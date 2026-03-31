@@ -16,7 +16,7 @@ namespace PrimeNumber
         {
             Primes primes = new Primes();
 
-            Console.WriteLine("Prime Number Operations");
+            Console.WriteLine("=================== Prime Number Operations ===================");
             Console.WriteLine();
 
             Console.WriteLine("1. Check if number is prime");
@@ -82,7 +82,21 @@ namespace PrimeNumber
             var primeNumbers = primes.GetPrimes(count);
 
             Console.WriteLine($"\nThe first {count} prime numbers are:");
-            Console.WriteLine(string.Join(", ", primeNumbers));
+
+            for (int i = 0; i < primeNumbers.Count; i++)
+            {
+                Console.Write(primeNumbers[i]);
+
+                // Add comma unless it's the last item
+                if (i < primeNumbers.Count - 1)
+                    Console.Write(", ");
+
+                // Insert a newline after every 10 numbers
+                if ((i + 1) % 10 == 0)
+                    Console.WriteLine();
+            }
+
+            Console.WriteLine(); // Final newline for clean output
         }
     }
 }
