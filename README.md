@@ -1,4 +1,4 @@
-﻿# 🔢 Prime Number
+﻿# 🔢 Prime Number (C#)
 
 ![.NET](https://img.shields.io/badge/.NET-ConsoleApp-blue)
 ![Language](https://img.shields.io/badge/C%23-Programming-green)
